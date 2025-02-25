@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    stages {
+        stage('Compile') {
+            steps {
+                sh 'echo Compiling the code...'
+            }
+        }
+        stage('Unit Test') {
+            steps {
+                sh 'echo Running unit tests...'
+            }
+        }
+        stage('Integration Test') {
+            steps {
+                sh 'echo Running integration tests...'
+            }
+        }
+        stage('Package') {
+            steps {
+                sh 'echo Packaging the application...'
+            }
+        }
+    }
+}
