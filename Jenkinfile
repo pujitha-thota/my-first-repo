@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: ''
+                git url: 'https://github.com/pujitha-thota/my-first-repo.git'
             }
         }
         stage('Build') {
